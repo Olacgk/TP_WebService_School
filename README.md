@@ -19,3 +19,4 @@ Bienvenue dans le projet **TP WebService School** ! Ce projet illustre l'implém
 ## 📂 Structure du projet
 
 - `Prof_service`: Microservice se chargeant de gérer les professeurs avec NodeJs
+- `Class_service`: Microservice se chargeant de gérer les classes en utilisant GraphQL
