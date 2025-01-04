@@ -7,16 +7,10 @@ const app = express();
 app.use(bodyParser.json());
 
 const sequelize = require('./config/database');
-const Prof = require('./models/profModel');
 
 sequelize.authenticate()
     .then(() => console.log('Connected to SQL Server'))
     .catch(err => console.error('Unable to connect to the database:', err));
-
-sequelize.sync().then(() => {
-    console.log('Database synced');
-});
-
 
 app.use('/api/v1/profs', profRoutes);
 
